@@ -11,7 +11,8 @@ import java.util.Collections;
 import java.util.List;
 
 public class ReactNativeNFCPackage implements ReactPackage {
-    @Override
+    // Deprecated RN 0.47
+    // @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>(1);
         modules.add(new ReactNativeNFCModule(reactContext));
@@ -24,7 +25,8 @@ public class ReactNativeNFCPackage implements ReactPackage {
         return Collections.emptyList();
     }
 
-    @Override
+    // Deprecated RN 0.47
+    // @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Collections.emptyList();
     }
